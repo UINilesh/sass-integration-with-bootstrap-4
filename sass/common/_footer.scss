@@ -1,0 +1,29 @@
+.scoop-block {
+  font-size: $px13;
+  color: $color-gray;
+  p:last-child {
+    margin-bottom: $px10;
+  }
+  a {
+    color: $color-gray;
+    position: relative;
+
+    &::after {
+      margin-left: 5px;
+      content: '\000B7';
+      position: relative;
+    }
+    &:last-child {
+      &::after {
+        margin-left: 0;
+        content: '';
+      }
+    }
+    &:hover {
+      color: $color-secondary;
+      &::after {
+        color: $color-gray;
+      }
+    }
+  }
+}

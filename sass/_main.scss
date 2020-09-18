@@ -1,0 +1,15 @@
+.mid-top-bar {
+  margin-bottom: $px15;
+}
+.btn-filter-small {
+  font-size: $px14;
+  .black-light {
+    color: #8b8b8b;
+  }
+  .btn-light {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    font-weight: 500;
+    color: #333333;
+  }
+}

@@ -1,0 +1,142 @@
+header {
+  margin-bottom: $px15;
+  .bg-dark {
+    background-color: $color-primary !important;
+    .navbar-brand {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .form-control {
+    height: calc(1.5em + 0.75rem + 4px);
+  }
+  .input-group-text {
+    border-radius: $px3;
+  }
+  .input-group
+    > .input-group-append:last-child
+    > .btn:not(:last-child):not(.dropdown-toggle),
+  .input-group
+    > .input-group-append:last-child
+    > .input-group-text:not(:last-child),
+  .input-group > .input-group-append:not(:last-child) > .btn,
+  .input-group > .input-group-append:not(:last-child) > .input-group-text,
+  .input-group > .input-group-prepend > .btn,
+  .input-group > .input-group-prepend > .input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .input-group > .input-group-append > .btn,
+  .input-group > .input-group-append > .input-group-text,
+  .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+  .input-group
+    > .input-group-prepend:first-child
+    > .input-group-text:not(:first-child),
+  .input-group > .input-group-prepend:not(:first-child) > .btn,
+  .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      padding: 0 10px;
+      .nav-link {
+        padding-bottom: 0;
+        padding-top: 0;
+        font-size: $px13;
+        color: $color-third;
+        > .material-icons-outlined,
+        .material-icons {
+          display: block;
+          margin: 0 auto;
+          height: 40px;
+          width: 40px;
+          font-size: 34px;
+          text-align: center;
+          padding: 3px;
+        }
+      }
+      &:hover,
+      &.active {
+        .nav-link {
+          color: $color-secondary;
+        }
+      }
+      .dropdown-menu {
+        font-size: $px13;
+        .dropdown-item {
+          color: $color-secondary;
+          .material-icons-outlined,
+          .material-icons {
+            font-size: $px20;
+            vertical-align: middle;
+            margin-top: -2px;
+          }
+        }
+      }
+    }
+    .profile {
+      .profile-icons {
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        height: 36px;
+        width: 36px;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 1px auto;
+        vertical-align: middle;
+        img {
+          max-width: 36x;
+          border-radius: 50%;
+          max-height: 36px;
+          line-height: 1;
+          letter-spacing: normal;
+          text-transform: none;
+          display: inline-block;
+          border: solid 1px #b3e4f9;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+.search-header {
+  .input-group {
+    border-radius: 3px;
+    .input-group-prepend {
+      // background-color: #f2f3f5;
+      height: 36px;
+      .input-group-text {
+        background-color: #f2f3f5;
+        height: 36px;
+        border-color: #f2f3f5;
+        color: $color-gray;
+      }
+    }
+    .form-control {
+      height: 36px;
+      background-color: #f2f3f5;
+      border: 0;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .input-group-append {
+      height: 36px;
+      .input-group-text {
+        height: 36px;
+        background-color: $color-secondary;
+        color: $color-white;
+        border-color: $color-secondary;
+      }
+      &:hover {
+        .input-group-text {
+          background-color: $color-secondary-dark;
+        }
+      }
+    }
+  }
+}
